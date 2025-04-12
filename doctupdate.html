@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+img{    
+    height: 140px;
+    width: 160px;
+    position: absolute;
+    top: -5px;
+    left: 190px;
+}
+body{
+    font-family: "Courier New", monospace;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url(O.avif);
+  background-position:left;
+  background-size: cover;
+  color: #704214;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 100px;
+    position: absolute;
+    top:80px;
+    left:730px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-top:100px;
+    filter:drop-shadow(10px 10px 10px  aqua)
+}
+
+
+
+
+h2 {
+    background:linear-gradient(90deg, red ,blue);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+</style>
+</head>
+
+<body>    
+<center><div class="container">
+    <div class="img"><img src="drrp.png"></div>
+    <h2>UPDATE DOCTOR DETAILS</h2>
+    <form method="POST" action="docsave.php">
+        <div class="input-group">
+            
+            Enter Doctor ID:<input type="text"  name="search" required >
+          
+        </div>
+        <button type="submit" class="btn">UPDATE</button><br><br>
+        <button type="reset"class="btn">RESET</button><br><br>
+        <a href="dashborad.html"  class="btn">BACK</a>
+    </form>
+</div>
+</center>
+
+</body>
+
+
+</html>

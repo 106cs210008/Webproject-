@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PLEASE REGISTER</title>
+    <style>
+        body {
+            height: 100vh;
+           display: flex;
+           justify-content: center;
+           font-family: "PeydaWeb SemBd"; 
+           background-color:grey;
+        }
+        h1 {
+            color: red;
+            text-align: center;
+        }
+        table {
+            margin: 0 auto;
+        }
+        th {
+            text-align: right;
+        }
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+        .container{
+               transition: all 0.5s ease;
+               position: relative;
+               width: 360px;
+               height: 260px;
+               border-radius: 12px;
+               padding: 20px 30px 120px;
+               background-color: white;
+               box-shadow: 0 5px 10px rgba(0, 0, 0,0.1);
+               overflow: hidden;
+            }
+    </style>
+</head>
+<body>
+    <form method="POST" action="patientinsert.php">
+        <h1>PATIENTS REGISTRATION FORM</h1>
+        <hr>
+        <div class="container">
+        <table>
+            <tr>
+                <th>First Name:</th>
+                <td><input type="text" name="a1" placeholder="First Name" required></td>
+            </tr>
+            <tr>
+                <th>Last Name:</th>
+                <td><input type="text" name="a2" placeholder="Last Name" required></td>
+            </tr>
+            <tr>
+                <th>Mobile No:</th>
+                <td><input type="number" name="a3" required></td>
+            </tr>
+            <tr>
+                <th>Gender:</th>
+                <td>
+                    <select name="a4" required>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Age:</th>
+                <td><input type="number" name="a5" required></td>
+            </tr>
+            <tr>
+                <th>City:</th>
+                <td><input type="text" name="a6" required></td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td><textarea name="a7" required></textarea></td>
+            </tr>
+             <tr>
+                <th>Doctor ID:</th>
+                <td><input type="text" name="hello" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="SUBMIT"><br>
+                    <a href="1234.html">Back</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

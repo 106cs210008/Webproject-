@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+img{    
+    height: 120px;
+    width: 150px;
+    position: absolute;
+    top: 15px;
+    left: 150px;
+}
+body{
+    font-family: "Courier New", monospace;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url(O.avif);
+  background-position:left;
+  background-size: cover;
+  color: #704214;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 100px;
+    position: absolute;
+    top:80px;
+    left:730px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-top:100px;
+    filter:drop-shadow(10px 10px 10px  aqua)
+}
+
+h2 {
+    background:linear-gradient(90deg, red ,blue);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+</style>
+<script>
+function validateForm() {
+    var n = document.forms["myform"]["username"].value;
+    var p = document.forms["myform"]["password"].value;
+    
+    if (n == "") {
+        alert("Please enter a username");
+         document.forms.username.focus();
+        return false;
+    }
+    else
+    {
+        var numericExpression=/^[a-zA-Z]+$/;
+        if(!document.forms.username.value.match(numericExpression))
+        {
+            alert("name should be Alphbet !!!");
+            document.forms.username.focus();
+            return false;
+        }
+    
+
+    }
+
+    if (p == "") {
+        alert("Please enter a password");
+        document.forms.password.focus();
+        return false;
+    }
+    else
+    {
+        var numericExpression=/^[0-9]+$/;
+        if(!document.forms.password.value.match(numericExpression))
+        {
+            alert("name should be number !!!");
+            document.forms.password.focus();
+            return false;
+        }
+    
+
+    }
+
+
+
+    return true;
+}
+</script>
+</head>
+<body>
+<center>
+<div class="container">
+    <div class="img"><img src="d2.png"></div>
+    <h2>LOGIN FORM</h2>
+    <form name="myform" method="POST" action="adminlogin.php" onsubmit="return validateForm()">
+        <div class="input-group">
+            User Name:<input type="text" name="username">
+        </div>
+        Password:<div class="input-group">
+            <input type="password" name="password">
+        </div>
+        <button type="submit" class="btn">LOGIN</button><br><br>
+        <button type="reset" class="btn">RESET</button><br><br>
+        <a href="home.html" class="btn">BACK</a>
+    </form>
+</div>
+</center>
+</body>
+</html>

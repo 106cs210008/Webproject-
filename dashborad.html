@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .body{
+            background-image: url('blue2.jpg');
+
+        }
+        .menu-bar
+        {
+            background:#007bff;
+            text-align: center;
+        }
+        .menu-bar ul 
+        {
+            display: inline-flex;
+            list-style: none;
+            color:#fff;
+        }
+        .menu-bar ul li
+        {
+            width: 200px;
+            margin: 15px;
+            padding: 15px;
+        }
+        .menu-bar ul li a
+        {
+            text-decoration:none ;
+            color: #fff;
+        }
+        .active, .menu-bar ul li:hover
+        {
+            background:#007bff;
+            border-radius: 3px;
+        }
+        .sub-menu-1
+        {
+            display: none;
+        }
+        .menu-bar ul li:hover .sub-menu-1
+        {
+            display: block;
+            position: absolute;
+            background-color:#007bff;
+            margin-top: 15px;
+            margin-left: -15px;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul
+        {
+            display: block;
+            margin: 10px;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li
+        {
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px dotted #fff;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li:last-child
+        {
+            border-bottom: none;
+        }
+        .logo{
+            position: absolute;
+            top: 40px;
+            left: 1630px;
+            width: 350px;
+            height:350px;    
+        } 
+        .drrp{
+            position: absolute;
+            top: 45px;
+            left: -80px;
+            width: 300px;
+            height:200px;
+        }
+        .doctor{
+            position: absolute;
+            top: 125px;
+            left:17px;
+            height: 800px;
+           
+        } 
+        p{
+            position: absolute;
+            top: 350px;
+            left: 1100px;
+            font-size: 50px;
+            color:#007bff;
+            font-family: Sitka banner;
+        }
+    </style>
+</head>
+<p>
+    ".....Doctors Have A Big Responsibility <br>
+    To Bring Smiles On The Faces <br>
+    OF Suffering Humanity..."
+</p>
+<img src="d2.png" class="logo">
+<img src="drrp.png" class="drrp">
+
+<img src="pic.png" class="doctor">
+
+<body class="body">
+ 
+
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="home.html" ><i class="fa fa-home"></i>HOME</a></li>
+        
+            <li><i class="fa-solid fa-user-doctor"></i></i>DOCTORS
+                <div class="sub-menu-1">
+                <ul>
+                    <li><a href="doctor.html">Add</a></li>
+                    <li><a href="viewdoctor.php">View</a></li>
+                    <li><a href="doctupdate.html">Update</a></li>
+                    <li><a href="docdelete.html">Delete</a></li>
+        
+                </ul>
+                </div>
+            </li>
+        
+            <li><i class="fa-solid fa-bed"></i>PATIENTS
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="patientsreg.html">Add</a></li>
+                    <li><a href="patientdisplay.php">View</a></li>
+                    <li><a href="patientupdate.html">Update</a></li>
+                    <li><a href="patientdelete.html">Delete</a></li>
+        
+                </ul>
+                </div>
+            </li>
+        
+            <li><a href="facility.html" ><i class="fa fa-clone"></i> FACILITIES</a></li>
+        
+            <li><a href="patientdisplay.php"  ><i class="fa fa-users"></i> APPOINTMENTS</a></li>
+        
+            <li><a href="aboutus.html" ><i class="fa fa-user"></i></i>ABOUT US</a></li>
+        </ul>
+    </div>
+</body>
+</html>

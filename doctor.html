@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color:#0ab2e5ff;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color:white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+       
+
+        h1 {
+            text-align: center;
+            background:linear-gradient(98deg, white, aqua, white);
+        }
+
+
+        hr {
+            border: none;
+            border-top: 2px solid #ddd;
+            margin: 20px 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #f16f0c;
+            text-decoration:blueviolet;
+            font-style:calc(Cambria);
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        select {
+            height: 40px;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        input[type="submit"],
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #33ff47;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover,
+        a:hover {
+            background-color: #E74C3C;
+        }
+
+        a {
+            margin-left: 10px;
+        }
+        h2{
+            top:78px;
+            position:absolute;
+            left:800px;
+        }
+        h3{
+            font-style:italic;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>DOCTOR REGISTRATION FORM</h1>
+    <form method="post" action="doct.php">
+        <center>
+        <h2 style=color:red>ENTER DOCTOR DETAILS  </h2>
+    </center>
+        <hr>
+        <label><h3>DOCTOR ID:</h3></label>
+        <input type="text" name="a10" required>
+
+        <label><h3>First Name:</h3></label>
+        <input type="text" name="a1" placeholder="First Name" required>
+
+        <label><h3>Last Name:</h3></label>
+        <input type="text" name="a2" placeholder="Last Name" required>
+
+        <label><h3>Email Id:</h3></label>
+        <input type="text" name="a3" placeholder="Enter Email" required>
+
+        <label><h3>Mobile No:</h3></label>
+        <input type="number" name="a4" required>
+
+        <label><h3>Specialist in:</h3></label>
+        <select name="a5" required>
+            <option value="">Select Specialist</option>
+            <option value="Anaesthesia">Anaesthesia</option>
+            <option>Andrology</option>
+            <option>Audiology and Speech Therapy</option>
+            <option>Ayurvedic</option>
+            <option>Cardiologist</option>
+            <option>Dentist</option>
+            <option>Dermatologist</option>
+            <option>Diabetologist</option>
+            <option>Dietician</option>
+            <option>Endocrinologist</option>
+            <option>ENT</option>
+            <option>Gastroenterologist</option>
+            <option>Gynaecilogist</option>
+            <option>Haematology</option>
+            <option>Homoeopathy</option>
+            <option>Medicine</option>
+            <option>Nephtologist</option>
+            <option>Neurologist</option>
+            <option>Neurosurgeon</option>
+            <option>Nutrionist</option>
+            <option>Oncologist</option>
+            <option>Ophthalmologist</option>
+            <option>Orthopaedics</option>
+            <option>Orthopedic Surgeon</option>
+            <option>Paediatrics</option>
+            <option>Pathologist</option>
+            <option>Radiologist</option>
+            <option>Rheumatologist</option>
+            <option>Sexologist</option>
+            <option>Skin</option>
+            <option>Surgeon</option>
+            <option>Urologist</option>
+        
+        </select>
+
+        <label><h3>Gender:</h3></label>
+        <select name="a6" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label><h3>Timings:</h3></label>
+        <input type="text" name="a7" required>
+
+        <label><h3>City:</h3></label>
+        <input type="text" name="a8" required>
+
+        <label><h3>Address:</h3></label>
+        <textarea name="a9" required></textarea>
+        <center>
+        <input type="submit" value="SUBMIT">
+
+        <a href="dashborad.html">Back</a>
+    </center>
+    </form>
+</body>
+</html>
